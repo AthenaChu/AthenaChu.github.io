@@ -1,0 +1,238 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>HTML和CSS学习心得 | 爱茵如梦</title>
+  <meta name="author" content="汪凌锋">
+  
+  <meta name="description" content="接触HTML和CSS也有一个多月了，大多数标签都已经能够熟练使用，偶尔还会出现一些错误，刚学的时候，大部分代码都要通过HTML和CSS敲出来，自从学了JS，发现HTML和CSS里只需要写一个样式，效果都是靠JS来写，然后就发现HTML和CSS简单了许多。标签分类：行级标签：a  span  img块">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="HTML和CSS学习心得"/>
+  <meta property="og:site_name" content="爱茵如梦"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+  
+  <link href="/favicon.ico" rel="icon" type="image/x-ico">
+  <link rel="canonical" href="http://yoursite.com/2015/11/25/HTML和CSS学习心得/index.html" />
+  <link rel="alternate" href="/atom.xml" title="爱茵如梦" type="application/atom+xml">
+  
+  
+  
+
+  
+  
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-45991394-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+</head>
+
+
+<body>
+  <header id="header" class="inner"><div class="blog-header">
+  <h1><a href="/">爱茵如梦</a></h1>
+  <h2><a href="/">活在今天不眷恋过往 初心却不曾遗忘</a></h2>
+</div>
+<nav id="main-nav" class="blog-nav">
+  <ul>
+    
+      <li><a href="/">首页/Home</a></li>
+    
+      <li><a href="/archives">归档/Archives</a></li>
+    
+      <li><a href="/experiment">试验/Experiment</a></li>
+    
+      <li><a href="/about">关于/About</a></li>
+    
+    <li> <a href="/atom.xml">RSS</a> </li>
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div></header>
+  <div id="content" class="inner">
+    
+      <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2015-11-25T11:53:06.000Z"><a href="/2015/11/25/HTML和CSS学习心得/">2015-11-25</a></time>
+      
+      
+  
+    <h1 class="title">HTML和CSS学习心得</h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>接触HTML和CSS也有一个多月了，大多数标签都已经能够熟练使用，偶尔还会出现一些错误，刚学的时候，大部分代码都要通过HTML和CSS敲出来，自从学了JS，发现HTML和CSS里只需要写一个样式，效果都是靠JS来写，然后就发现HTML和CSS简单了许多。<br><em>标签分类：</em><br>行级标签：a  span  img<br>块级标签：body  div  p  table  h1~h6  ol  ul  dl(字典列表或者自定义列表)  form<br><em>默认值：</em><br>div 默认宽度遵从父级宽度，没有默认高度，内容可以撑开<br>body 可以设置边框背景，设置边框可以修改width、height值，设置背景会撑满屏幕，不能修改宽高，设置width、height可以修改body 内容，不会影响背景。<br>body 浏览器的可视区域<br>a标签：取消下划线text-decoration:none;<br>ul、ol列表样式类型：list-style-type:none;</p>
+<pre><code>图片标签：&lt;<span class="tag">img</span> src=<span class="string">"图片路径"</span> alt=<span class="string">"内容替代"</span> title=<span class="string">"名字"</span>/&gt;
+</code></pre><p><strong>html基本样式</strong></p>
+<pre><code><span class="doctype">&lt;!doctype html&gt;</span>
+<span class="tag">&lt;<span class="title">html</span> <span class="attribute">lang</span>=<span class="value">"en"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">head</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">meta</span> <span class="attribute">charset</span>=<span class="value">"utf-8"</span>/&gt;</span>
+        <span class="tag">&lt;<span class="title">title</span>&gt;</span><span class="tag">&lt;/<span class="title">title</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">link</span> <span class="attribute">rel</span>=<span class="value">"stylesheet"</span> <span class="attribute">type</span>=<span class="value">"text/css"</span> <span class="attribute">href</span>=<span class="value">"index.css"</span>/&gt;</span>
+    <span class="tag">&lt;/<span class="title">head</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">body</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">body</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">html</span>&gt;</span>
+</code></pre><p><strong>css三种引入方式</strong></p>
+<pre><code>1.外部引入(常用)：<span class="tag">&lt;<span class="title">link</span> <span class="attribute">rel</span>=<span class="value">"stylesheet"</span> <span class="attribute">type</span>=<span class="value">"text/css"</span> <span class="attribute">href</span>=<span class="value">"index.css"</span>/&gt;</span>
+2.行间样式：<span class="tag">&lt;<span class="title">div</span> <span class="attribute">style</span>=<span class="value">""</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+3.style标签引入：在<span class="tag">&lt;/<span class="title">head</span>&gt;</span>上添加<span class="tag">&lt;<span class="title">style</span>&gt;</span><span class="css"></span><span class="tag">&lt;/<span class="title">style</span>&gt;</span>
+</code></pre>
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+<section id="comment">
+<!-- Duoshuo Comment BEGIN -->
+	<div class="ds-thread"></div>
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"winterland"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = 'http://static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		|| document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+<!-- Duoshuo Comment END -->
+</section>
+
+</div></div>
+      <aside id="sidebar" class="alignright">
+  <div class="search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="搜索">
+    <input type="hidden" name="q" value="site:yoursite.com">
+  </form>
+</div>
+
+  
+
+  
+
+  <div class="widget tag">
+<h3 class="title">友情链接</h3>
+<ul class="entry">
+<li><a href="http://blog.jswh.me/" title="镜水无痕">镜水无痕</a></li>
+</ul>
+</div>
+
+</aside>
+    
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer" class="inner"><div class="aligncenter">
+  
+  &copy; 2015 汪凌锋
+  
+</div>
+<div class="clearfix"></div></footer>
+  <script src="http://cdn.staticfile.org/jquery/2.1.1-rc2/jquery.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+<div id="scroll2top">
+<img src="/scroll2top/arrow.png"/>
+</div>
+<script src="/scroll2top/scroll2top.min.js"></script>
+<div id="winterland">
+  <canvas></canvas>
+</div>
+<script src="/js/winterland.min.js"></script>
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script src="https://www.zybuluo.com/static/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</script>
+  <!-- Baidu Button BEGIN -->
+    <script type="text/javascript" id="bdshare_js" data="type=slide&amp;img=1&amp;mini=1&amp;pos=left&amp;uid=6871901" ></script>
+    <script type="text/javascript" id="bdshell_js"></script>
+    <script type="text/javascript" src="/js/bds_animate.min.js"></script>
+    <script type="text/javascript">
+    var bds_config={"bdTop":0};
+    document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000);
+    </script>
+ <!-- Baidu Button END -->
+
+</body>
+</html>
