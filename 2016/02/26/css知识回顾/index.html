@@ -187,6 +187,15 @@
 <ul>
 <li>注释方式 /**/</li>
 </ul>
+<h3 id="单位">单位</h3><blockquote>
+<ul>
+<li>px 具体单位 具体到像素</li>
+<li>100% 百分比 根据父级</li>
+<li>em 单位被定义为当前字体大小 根据body 例如：body{font-size:14px}</li>
+<li>rem root em 基于根元素html进行设置</li>
+<li>vh和vw 视窗单位  vh等于viewport高度的1/100.例如，如果浏览器的高是900px,1vh求得的值为9px。同理，如果显示窗口宽度为750px,1vw求得的值为7.5px</li>
+</ul>
+</blockquote>
 <h3 id="css引入方式">css引入方式</h3><blockquote>
 <ul>
 <li>内联式：优点：优先级高，不会被其他样式覆盖影响。缺点：不利于代码的维护，没有样式的内容分离，影响阅读体验</li>
@@ -201,12 +210,33 @@
 <li>通配选择器 *</li>
 <li>层级选择器 tag tag</li>
 <li>分组选择器 tag,tag</li>
-<li>伪类选择器 A的4个伪类<ul>
+<li>伪类选择器 a的4个伪类<ul>
 <li>link hover active visited </li>
 </ul>
 </li>
 <li>伪元素选择器 ::</li>
 <li>id&gt;类&gt;标签</li>
+</ul>
+</blockquote>
+<h3 id="BFC">BFC</h3><blockquote>
+<ul>
+<li>FC: Formatting Content 格式化上下文</li>
+<li>BFC: Block Formatting Content 块级格式化上下文</li>
+<li>IFC: Inline Formatting Content 行级格式化上下文</li>
+</ul>
+</blockquote>
+<h3 id="BFC的生成条件">BFC的生成条件</h3><blockquote>
+<ul>
+<li>float值不为none</li>
+<li>overflow的值不为visible</li>
+<li>display的值为inline-block、table-cell、table-caption</li>
+<li>position的值为absolute或fixed</li>
+</ul>
+</blockquote>
+<h3 id="BFC的约束规则">BFC的约束规则</h3><blockquote>
+<ul>
+<li>生成BFC元素的子元素会一个接一个的放置。垂直方向上他们的起点是一个包含块的顶部，两个相邻子元素之间的垂直距离取决于元素的margin特性。在BFC中相邻的块级元素外边距会折叠。</li>
+<li>生成BFC元素的子元素中，每一个子元素做外边距与包含块的左边界相接触，（对于从右到左的格式化，右外边距接触右边界），即使浮动元素也是如此（尽管子元素的内容区域会由于浮动而压缩），除非这个子元素也创建了一个新的BFC（如它自身也是一个浮动元素）。</li>
 </ul>
 </blockquote>
 
