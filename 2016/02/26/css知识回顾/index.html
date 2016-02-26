@@ -100,7 +100,7 @@
 <a id="more"></a>
 <blockquote>
 <ul>
-<li>background-color:背景颜色 white/#ffffff</li>
+<li>background-color:背景颜色 white/#ffffff<ul>
 <li>background-image:背景图片 url(“img/xxx.png”)</li>
 <li>background-repeat:背景平铺 <ul>
 <li>no-repeat 不平铺</li>
@@ -108,7 +108,7 @@
 <li>repeat-y 沿y轴平铺</li>
 </ul>
 </li>
-<li>background-position:位置 x(px) y(px)<ul>
+<li>background-position:位置 x(px) y(px)</li>
 <li>x轴对应位置 left center right</li>
 <li>y轴对应位置 top center bottom</li>
 </ul>
@@ -116,7 +116,8 @@
 </ul>
 </blockquote>
 <pre><code><span class="attribute">background</span><span class="value">:red <span class="function">url</span>(<span class="string">" "</span>) px px no-repeat;</span>
-</code></pre><p>###border:边框<br>&gt;</p>
+</code></pre><p>###border:边框</p>
+<blockquote>
 <ul>
 <li>border-width:边框宽度（默认值是3px，数值不能为负数）</li>
 <li>border-style:边框样式（没有默认值）<ul>
@@ -129,7 +130,9 @@
 <li>border-color:边框颜色（默认颜色是字体颜色，默认字体颜色是黑色）</li>
 <li>border-radius:边框圆角</li>
 </ul>
-<p>###padding:内边距<br>&gt;</p>
+</blockquote>
+<p>###padding:内边距</p>
+<blockquote>
 <ul>
 <li>TRBL法则:top right bottom left</li>
 <li>padding:0px(上) 0px(右) 0px(下) 0px(左)</li>
@@ -137,40 +140,49 @@
 <li>padding:0px(上下) 0px(左右)</li>
 <li>padding:0px(上) 0px(左右) 0px(下)</li>
 </ul>
-<p>###margin:外边距<br>&gt;</p>
+</blockquote>
+<p>###margin:外边距</p>
+<blockquote>
 <ul>
 <li>margin:0px; 上右下左</li>
 <li>margin:0px 0px; 上下 左右</li>
 <li>margin:0px 0px 0px; 上 左右 下</li>
 <li>margin:0px 0px 0px 0px; 上 右 下 左</li>
 </ul>
+</blockquote>
 <ul>
 <li>line-height 居中</li>
 <li>text-decoration:none 取消下划线</li>
 <li>display:none 不显示</li>
 <li>list-style-type:none 列表样式类型</li>
 </ul>
-<p>&gt;</p>
+<blockquote>
 <ul>
 <li>a:link{} 当前锚点没有访问过的样式，初始样式</li>
 <li>a:visited{} 访问过后的样式</li>
 <li>a:hover{} 鼠标放在(悬浮)上面的样式</li>
 <li>a:active{} 鼠标点击没有松开时的样式</li>
 </ul>
-<p>###float:浮动<br>&gt;</p>
+</blockquote>
+<p>###float:浮动</p>
+<blockquote>
 <ul>
 <li>left 向左浮动</li>
 <li>right 向右浮动</li>
 <li>none 默认值</li>
 <li>清除浮动方法:给父级设置固定宽高或overflow:hidden;</li>
 </ul>
-<p>###position:定位<br>&gt;</p>
+</blockquote>
+<p>###position:定位</p>
+<blockquote>
 <ul>
 <li>relative:相对自身当前位置上下左右定位，值可以为负数，可以对块、行标签使用，不会改变标签属性</li>
 <li>absolute:绝对定位，如果没有父级标签设置relative，当前标签元素以body可视区域为起点，如果有父级标签设置relative,则以父级标签位置为起点</li>
 <li>fixed:固定定位</li>
 </ul>
-<p>###font:字体<br>&gt;</p>
+</blockquote>
+<p>###font:字体</p>
+<blockquote>
 <ul>
 <li>font-weight:bold 加粗</li>
 <li>font-style:字体样式 italic斜体 normal恢复正常</li>
@@ -178,6 +190,7 @@
 <li>font-size:字体大小</li>
 <li>line-height:行高 居中(背景高度)</li>
 </ul>
+</blockquote>
 
       
     </div>
