@@ -3,15 +3,15 @@
 <head>
   <meta charset="utf-8">
   
-  <title>hhhh | 爱茵如梦</title>
+  <title>css知识回顾 | 爱茵如梦</title>
   <meta name="author" content="汪凌锋">
   
-  <meta name="description" content="gagenc">
+  <meta name="description" content="###background:背景">
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <meta property="og:title" content="hhhh"/>
+  <meta property="og:title" content="css知识回顾"/>
   <meta property="og:site_name" content="爱茵如梦"/>
 
   
@@ -19,7 +19,7 @@
   
   
   <link href="/favicon.ico" rel="icon" type="image/x-ico">
-  <link rel="canonical" href="http://yoursite.com/2016/02/25/hhhh/index.html" />
+  <link rel="canonical" href="http://yoursite.com/2016/02/26/css知识回顾/index.html" />
   <link rel="alternate" href="/atom.xml" title="爱茵如梦" type="application/atom+xml">
   
   
@@ -86,17 +86,98 @@
     <header>
       
         <div class="icon"></div>
-        <time datetime="2016-02-25T12:50:13.000Z"><a href="/2016/02/25/hhhh/">2016-02-25</a></time>
+        <time datetime="2016-02-26T02:52:17.000Z"><a href="/2016/02/26/css知识回顾/">2016-02-26</a></time>
       
       
   
-    <h1 class="title">hhhh</h1>
+    <h1 class="title">css知识回顾</h1>
   
 
     </header>
     <div class="entry">
       
-        <p>gagenc</p>
+        <p>###background:背景</p>
+<a id="more"></a>
+<blockquote>
+<ul>
+<li>background-color:背景颜色 white/#ffffff</li>
+<li>background-image:背景图片 url(“img/xxx.png”)</li>
+<li>background-repeat:背景平铺 <ul>
+<li>no-repeat 不平铺</li>
+<li>repeat-x 沿x轴平铺</li>
+<li>repeat-y 沿y轴平铺</li>
+</ul>
+</li>
+<li>background-position:位置 x(px) y(px)<ul>
+<li>x轴对应位置 left center right</li>
+<li>y轴对应位置 top center bottom</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<pre><code><span class="attribute">background</span><span class="value">:red <span class="function">url</span>(<span class="string">" "</span>) px px no-repeat;</span>
+</code></pre><p>###border:边框<br>&gt;</p>
+<ul>
+<li>border-width:边框宽度（默认值是3px，数值不能为负数）</li>
+<li>border-style:边框样式（没有默认值）<ul>
+<li>solid 实线</li>
+<li>dotted 点状线</li>
+<li>dashed 虚线</li>
+<li>double 双线</li>
+</ul>
+</li>
+<li>border-color:边框颜色（默认颜色是字体颜色，默认字体颜色是黑色）</li>
+<li>border-radius:边框圆角</li>
+</ul>
+<p>###padding:内边距<br>&gt;</p>
+<ul>
+<li>TRBL法则:top right bottom left</li>
+<li>padding:0px(上) 0px(右) 0px(下) 0px(左)</li>
+<li>padding:0px(上右下左)</li>
+<li>padding:0px(上下) 0px(左右)</li>
+<li>padding:0px(上) 0px(左右) 0px(下)</li>
+</ul>
+<p>###margin:外边距<br>&gt;</p>
+<ul>
+<li>margin:0px; 上右下左</li>
+<li>margin:0px 0px; 上下 左右</li>
+<li>margin:0px 0px 0px; 上 左右 下</li>
+<li>margin:0px 0px 0px 0px; 上 右 下 左</li>
+</ul>
+<ul>
+<li>line-height 居中</li>
+<li>text-decoration:none 取消下划线</li>
+<li>display:none 不显示</li>
+<li>list-style-type:none 列表样式类型</li>
+</ul>
+<p>&gt;</p>
+<ul>
+<li>a:link{} 当前锚点没有访问过的样式，初始样式</li>
+<li>a:visited{} 访问过后的样式</li>
+<li>a:hover{} 鼠标放在(悬浮)上面的样式</li>
+<li>a:active{} 鼠标点击没有松开时的样式</li>
+</ul>
+<p>###float:浮动<br>&gt;</p>
+<ul>
+<li>left 向左浮动</li>
+<li>right 向右浮动</li>
+<li>none 默认值</li>
+<li>清除浮动方法:给父级设置固定宽高或overflow:hidden;</li>
+</ul>
+<p>###position:定位<br>&gt;</p>
+<ul>
+<li>relative:相对自身当前位置上下左右定位，值可以为负数，可以对块、行标签使用，不会改变标签属性</li>
+<li>absolute:绝对定位，如果没有父级标签设置relative，当前标签元素以body可视区域为起点，如果有父级标签设置relative,则以父级标签位置为起点</li>
+<li>fixed:固定定位</li>
+</ul>
+<p>###font:字体<br>&gt;</p>
+<ul>
+<li>font-weight:bold 加粗</li>
+<li>font-style:字体样式 italic斜体 normal恢复正常</li>
+<li>font-family:设置字体</li>
+<li>font-size:字体大小</li>
+<li>line-height:行高 居中(背景高度)</li>
+</ul>
 
       
     </div>
@@ -240,15 +321,11 @@ var duoshuoQuery = {short_name:"winterland"};
   <ul class="entry">
     
       <li>
+        <a href="/2016/02/26/css知识回顾/">css知识回顾</a>
+      </li>
+    
+      <li>
         <a href="/2016/02/25/html知识点回顾/">html知识点回顾</a>
-      </li>
-    
-      <li>
-        <a href="/2016/02/25/hhhh/">hhhh</a>
-      </li>
-    
-      <li>
-        <a href="/2016/02/25/haha/">haha</a>
       </li>
     
       <li>
@@ -257,6 +334,10 @@ var duoshuoQuery = {short_name:"winterland"};
     
       <li>
         <a href="/2015/11/26/JS学习心得/">JS学习心得</a>
+      </li>
+    
+      <li>
+        <a href="/2015/11/25/HTML和CSS学习心得/">HTML和CSS学习心得</a>
       </li>
     
   </ul>
