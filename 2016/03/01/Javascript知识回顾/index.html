@@ -1,0 +1,501 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Javascript知识回顾 | 漢</title>
+  <meta name="author" content="汪凌锋">
+  
+  <meta name="description" content="js的组成
+
+ECMAscript 核心 几乎没有兼容问题 担任解析器的角色 处理我们的逻辑代码
+DOM 文档对象模型；文档指的就是网页；把网页变成一个JS可以操作的对象；给了JS可以操作页面元素的能力；document;有一些兼容性问题；
+BOM 浏览器对象模型；给了JS操作浏览器的能力；window；有许多兼容性问题">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="Javascript知识回顾"/>
+  <meta property="og:site_name" content="漢"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+  
+  <link href="/favicon.ico" rel="icon" type="image/x-ico">
+  <link rel="canonical" href="http://yoursite.com/2016/03/01/Javascript知识回顾/index.html" />
+  <link rel="alternate" href="/atom.xml" title="漢" type="application/atom+xml">
+  
+  
+  
+
+  
+  
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-45991394-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+</head>
+
+
+<body>
+  <header id="header" class="inner"><div class="blog-header">
+  <h1><a href="/">漢</a></h1>
+  <h2><a href="/"></a></h2>
+</div>
+<nav id="main-nav" class="blog-nav">
+  <ul>
+    
+      <li><a href="/">首页/Home</a></li>
+    
+      <li><a href="/archives">归档/Archives</a></li>
+    
+      <li><a href="/experiment">试验/Experiment</a></li>
+    
+      <li><a href="/about">关于/About</a></li>
+    
+    <li> <a href="/atom.xml">RSS</a> </li>
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div></header>
+  <div id="content" class="inner">
+    
+      <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2016-03-01T08:42:19.000Z"><a href="/2016/03/01/Javascript知识回顾/">2016-03-01</a></time>
+      
+      
+  
+    <h1 class="title">Javascript知识回顾</h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <blockquote>
+<p>js的组成</p>
+<ul>
+<li>ECMAscript 核心 几乎没有兼容问题 担任解析器的角色 处理我们的逻辑代码</li>
+<li>DOM 文档对象模型；文档指的就是网页；把网页变成一个JS可以操作的对象；给了JS可以操作页面元素的能力；document;有一些兼容性问题；</li>
+<li>BOM 浏览器对象模型；给了JS操作浏览器的能力；window；有许多兼容性问题</li>
+</ul>
+</blockquote>
+<a id="more"></a>
+<blockquote>
+<p>js的引用</p>
+<ul>
+<li>外部文件 script标签 src属性</li>
+<li>内部 script标签区域</li>
+<li>注释方式 单行注释 多行注释</li>
+</ul>
+</blockquote>
+<h3 id="数据类型">数据类型</h3><blockquote>
+<p>基本类型(primitive)</p>
+<p>1.Undefined<br>在使用var声明变量，但未对其加以初始化时，这个变量的类型就是undefined,且其默认初始化值为undefined<br>对未声明与初始化的变量，直接使用，那么这个变量的类型也是undefined，但是没有默认化初始值。<br>type test;//undefined 直接调用就会报错</p>
+<p>2.Null<br>null类型的默认值是null,表示一个空对象指针，如果定义的变量准备在将来用于保存对象，那么就该将该变量初始化为null。</p>
+<p>3.Boolean<br>该类型有两个值：true false<br>Boolean()方法 可以转换其他数据类型为布尔值<br><img src="http://upload-images.jianshu.io/upload_images/94752-7c5eb2f781cbd6f6.png"></p>
+<p>4.Number<br>整数 可以通过10进制 8进制 16进制表示<br>浮点数 该数值必须包含一个小数点，小数点后面必须有一位数字，如果小数点后只有0，自动转换成整数<br>浮点数占据的空间内存是内存的两倍，极大极小的数字会用e科学表示法。</p>
+<p>NAN</p>
+<ul>
+<li>1.即非数值，是一个特殊的值，这个数值用于表示一个本来要返回数值的操作数，未返回数值的情况。比如任何数值除以0，本是不符合规范的，js里，这样的操作返回NaN(但是实际上，只有0除以0时返回NaN,其他则无穷值)。</li>
+<li>2.NaN有两个不同寻常的特点：任何涉及NaN的操作都会返回NaN，NaN值与任何值都不相等，包括本身。</li>
+<li>3.isNaN()函数，这个函数可以判断，传递的参数是否“不是数值”，这里涉及数值转换的问题，例如“10”这个字符串就可以转换为10，但是“blue”这个字符串则无法转换为数字，所以isNaN(“blue”)==true</li>
+</ul>
+<p>number() 可以 任何类型<br>parseInt() parseFloat() 只用于字符串类型</p>
+<p>5.string</p>
+<p>‘’ “” 单引号 双引号</p>
+<p>基本类型的特点:</p>
+<p>基本类型的特点是不可变的</p>
+<p>复杂对象类型 Object 对象是属性和方法的集合</p>
+<p>基本类型以外 就是引用类型</p>
+<p>引用类型的特点</p>
+<p>引用类型的值是可变的</p>
+</blockquote>
+<h3 id="变量_var_(let_const)">变量 var (let const)</h3><p>变量是一个杯子，它的类型是由它里面存放的东西决定的<br>可以通过typeof命名规范 一般推荐驼峰式命名</p>
+<blockquote>
+<ul>
+<li>语句</li>
+<li>运算符</li>
+</ul>
+<p>() 括号 提升运算级别 优先运算</p>
+<p>++ – 递增 递减 有前置和后置<br>前缀形式是先运算再赋值</p>
+<p>后缀形式是先赋值在运算</p>
+<p>！ &amp;&amp; || 逻辑非</p>
+<p>＊／％</p>
+<p>＋ 加法  拼接</p>
+<p>&lt;= &gt;= </p>
+<p>==判断相等 !=不相等</p>
+<p>===全等 !==不全等</p>
+<p>&lt; &gt;</p>
+<p>?: 三元条件表达式</p>
+<p>= += -=</p>
+<p>流程控制语句：</p>
+<ul>
+<li><p>if 最基本的条件判断语句</p>
+</li>
+<li><p>switch </p>
+</li>
+<li><p>条件运算符 num1 &gt; num2 ? num1 : num2</p>
+</li>
+<li><p>for、while、do-while </p>
+</li>
+</ul>
+</blockquote>
+<p> for-in 遍历对象</p>
+<pre><code> <span class="keyword">for</span>(<span class="keyword">var</span> i <span class="keyword">in</span> obj)<span class="comment">{
+   console.log(i);
+}</span>
+</code></pre><p> for in不要对数组循环，因为for in的顺序不是固定的</p>
+<blockquote>
+<p>forEach 遍历数组</p>
+<p>try catch</p>
+<p>width</p>
+<p>eval</p>
+</blockquote>
+<h3 id="作用域">作用域</h3><blockquote>
+<p>this</p>
+<p>this是Javascript语言的一个关键字。</p>
+<p>它代表函数运行时，自动生成的一个内部对象，只能在函数内部使用</p>
+</blockquote>
+<pre><code><span class="function"><span class="keyword">function</span> <span class="title">test</span><span class="params">()</span></span>{
+    <span class="keyword">this</span>.x = <span class="number">1</span>;
+}
+</code></pre><blockquote>
+<p>随着函数使用场合的不同，this的值会发生变化。但是有一个总的原则，那就是this指的是，调用函数的那个对象。</p>
+<ul>
+<li>在全局作用域下面调用this，this指向window</li>
+<li>函数声明，匿名函数，函数表达式在全局中调用，this指向window</li>
+<li>new关键词构造的对象，this指向创建该对象的函数</li>
+<li>this当前的函数为对象属性的对象，this指向该对象 </li>
+</ul>
+</blockquote>
+<ol>
+<li><p>普通函数调用</p>
+<pre><code><span class="function"><span class="keyword">function</span> <span class="title">test</span>(<span class="params"></span>)</span>{
+    <span class="keyword">this</span>.x = <span class="number">1</span>;
+    <span class="built_in">console</span>.log(<span class="keyword">this</span>.x);
+}
+test(); <span class="comment">// 1</span>
+</code></pre></li>
+<li><p>作为对象方法的调用</p>
+<pre><code>function <span class="keyword">test</span>(){
+    console.<span class="literal">log</span>(this.x);
+}
+<span class="keyword">var</span> <span class="keyword">h</span> = {};
+<span class="keyword">h</span>.x = 1;
+<span class="keyword">h</span>.t = <span class="keyword">test</span>;
+<span class="keyword">h</span>.t(); <span class="comment">// 1</span>
+</code></pre></li>
+<li><p>作为构造函数调用</p>
+<pre><code><span class="function"><span class="keyword">function</span> <span class="title">test</span>(<span class="params"></span>)</span>{
+    <span class="keyword">this</span>.x = <span class="number">1</span>;
+}
+<span class="keyword">var</span> h = <span class="keyword">new</span> test();
+<span class="built_in">console</span>.log(h.x); <span class="comment">// 1</span>
+</code></pre></li>
+</ol>
+<ol>
+<li><p>apply() call()</p>
+<pre><code>function x = 0;
+function <span class="keyword">test</span>(){
+    console.<span class="literal">log</span>(this.x);
+}
+<span class="keyword">var</span> <span class="keyword">h</span> = {};
+<span class="keyword">h</span>.x = 1;
+<span class="keyword">h</span>.t = <span class="keyword">test</span>;
+<span class="keyword">h</span>.t.apply(); <span class="comment">// 0</span>
+</code></pre></li>
+</ol>
+<blockquote>
+<p>－ “构造函数”，其实就是一个普通函数，但是内部使用了this变量。对构造函数使用new运算符，就能生成实例，并且this变量会绑定在实例对象上</p>
+<p>用构造函数生成实例对象，有一个缺点，那就是无法共享属性和方法。</p>
+<ul>
+<li><p>继承</p>
+<p>对象之间的继承方法</p>
+</li>
+</ul>
+<ol>
+<li><p>构造函数绑定</p>
+<p>使用call或apply方法，将父对象的构造函数绑定在子对象上</p>
+</li>
+</ol>
+<p> 任何一个prototype对象都有一个constructor属性，指向它的构造函数</p>
+<p> 每一个实例也有一个constructor属性，默认调用prototype对象的constructor属性。</p>
+</blockquote>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+<section id="comment">
+<!-- Duoshuo Comment BEGIN -->
+	<div class="ds-thread"></div>
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"winterland"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = 'http://static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		|| document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+<!-- Duoshuo Comment END -->
+</section>
+
+</div></div>
+      <aside id="sidebar" class="alignright">
+  
+
+  
+
+  
+
+  <div class="widget tag">
+<h3 class="title">友情链接</h3>
+<ul class="entry">
+	<li>
+		<a href="http://zgmn.github.io/">胡月</a>
+	</li>
+	<li>
+		<a href="http://running11.github.io/">邝艳芝</a>
+	</li>
+	<li>
+		<a href="http://haomark.github.io/">郝云鹏</a>
+	</li>
+	<li>
+		<a href="http://jameblunt1973.github.io/">张记文</a>
+	</li>
+	<li>
+		<a href="http://bairuoqing666.github.io/">白若卿</a>
+	</li>
+	<li>
+		<a href="http://gcsHaya.github.io/">张俊琪</a>
+	</li>
+	<li>
+		<a href="http://zy8232003.github.io/">张跃</a>
+	</li>
+	<li>
+		<a href="http://weibo0909.github.io/">魏传波</a>
+	</li>
+	<li>
+		<a href="http://luqiqi1225.github.io">陆琦</a>
+	</li>
+	<li>
+		<a href="http://chumengxing1121.github.io/">褚梦星</a>
+	</li>
+	<li>
+		<a href="http://aoyi551083.github.io/">敖艺</a>
+	</li>
+	<li>
+		<a href="http://zoeyzhou.github.io">周叶</a>
+	</li>
+	<li>
+		<a href="http://sundyfuther.github.io/">陈晓佳</a>
+	</li>
+	<li>
+		<a href="http://sh5054.github.io/">孙浩</a>
+	</li>
+	<li>
+		<a href="http://quanquanxuan.github.io/">宣圆圆</a>
+	</li>
+	<li>
+		<a href="http://baobeiaini.github.io/">王贝贝</a>
+	</li>
+	<li>
+		<a href="http://crerich.github.io/">程华</a>
+	</li>
+	<li>
+		<a href="http://tyl1002353363.github.io/">谭于磊</a>
+	</li>
+	<li>
+		<a href="http://yamanai.github.io/">张明</a>
+	</li>
+	<li>
+		<a href="http://lck297231489.github.io/">刘臣康</a>
+	</li>
+	<li>
+		<a href="http://tavey.github.io/">王晓伟</a>
+	</li>
+	<li>
+		<a href="http://wj1213180604.github.io/">王娟</a>
+	</li>
+	<li>
+		<a href="http://zhuqy.github.io/">祝倩莹</a>
+	</li>
+	<li>
+		<a href="http://tang0916tang.github.io/">张晓翠</a>
+	</li>
+	<li>
+		<a href="http://quangege.github.io/">张涌泉</a>
+	</li>
+	<li>
+		<a href="http://niexiaofei1988.github.io/">聂海锋</a>
+	</li>
+	<li>
+		<a href="http://changxiangru.github.io/">常相如</a>
+	</li>
+	<li>
+		<a href="http://xuyanchao.github.io/">许颜超</a>
+	</li>
+	<li>
+		<a href="http://samguoqiang.github.io./">陈国强</a>
+	</li>
+	<li>
+		<a href="http://hanmingyang.github.io/">韩明洋</a>
+	</li>
+</ul>
+</div>
+
+  
+
+  
+<div class="widget tag">
+  <h3 class="title">最新文章</h3>
+  <ul class="entry">
+    
+      <li>
+        <a href="/2016/03/01/Javascript知识回顾/">Javascript知识回顾</a>
+      </li>
+    
+      <li>
+        <a href="/2016/02/26/css知识回顾/">css知识回顾</a>
+      </li>
+    
+      <li>
+        <a href="/2016/02/25/html知识点回顾/">html知识点回顾</a>
+      </li>
+    
+      <li>
+        <a href="/2015/11/28/JS预解析与作用域/">JS预解析与作用域</a>
+      </li>
+    
+      <li>
+        <a href="/2015/11/26/JS学习心得/">JS学习心得</a>
+      </li>
+    
+  </ul>
+</div>
+
+</aside>
+    
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer" class="inner"><div class="aligncenter">
+  
+  &copy; 2016 汪凌锋
+  
+</div>
+<div class="clearfix"></div></footer>
+  <script src="http://cdn.staticfile.org/jquery/2.1.1-rc2/jquery.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+
+
+<script type="text/javascript">
+var disqus_shortname = 'athenachu.github.io';
+
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+</script>
+
+
+
+
+
+
+
+
+
+<div id="scroll2top">
+<img src="/scroll2top/arrow.png"/>
+</div>
+<script src="/scroll2top/scroll2top.min.js"></script>
+<div id="winterland">
+  <canvas></canvas>
+</div>
+<script src="/js/winterland.min.js"></script>
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script src="https://www.zybuluo.com/static/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</script>
+  <!-- Baidu Button BEGIN -->
+    <script type="text/javascript" id="bdshare_js" data="type=slide&amp;img=1&amp;mini=1&amp;pos=left&amp;uid=6871901" ></script>
+    <script type="text/javascript" id="bdshell_js"></script>
+    <script type="text/javascript" src="/js/bds_animate.min.js"></script>
+    <script type="text/javascript">
+    var bds_config={"bdTop":0};
+    document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000);
+    </script>
+ <!-- Baidu Button END -->
+
+</body>
+</html>
