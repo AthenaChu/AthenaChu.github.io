@@ -111,12 +111,26 @@ BOM 浏览器对象模型；给了JS操作浏览器的能力；window；有许�
 <a id="more"></a>
 <blockquote>
 <p>js的引用</p>
-<ul>
-<li>外部文件 script标签 src属性</li>
-<li>内部 script标签区域</li>
-<li>注释方式 单行注释 多行注释</li>
-</ul>
 </blockquote>
+<ul>
+<li><p>外部文件 script标签 src属性</p>
+<pre><code><span class="tag">&lt;<span class="title">body</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">script</span> <span class="attribute">type</span>=<span class="value">"text/javascript"</span> <span class="attribute">src</span>=<span class="value">"index.js"</span>&gt;</span><span class="undefined">
+    </span><span class="tag">&lt;/<span class="title">script</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">body</span>&gt;</span> 
+</code></pre></li>
+</ul>
+<ul>
+<li><p>内部 script标签区域</p>
+<pre><code><span class="tag">&lt;<span class="title">head</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">script</span>&gt;</span><span class="undefined">
+
+    </span><span class="tag">&lt;/<span class="title">script</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">head</span>&gt;</span>
+</code></pre></li>
+<li><p>注释方式 单行注释 多行注释</p>
+</li>
+</ul>
 <h3 id="数据类型">数据类型</h3><blockquote>
 <p>基本类型(primitive)</p>
 <p>1.Undefined<br>在使用var声明变量，但未对其加以初始化时，这个变量的类型就是undefined,且其默认初始化值为undefined<br>对未声明与初始化的变量，直接使用，那么这个变量的类型也是undefined，但是没有默认化初始值。<br>type test;//undefined 直接调用就会报错</p>
